@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: url('path1.png');
+}
+
+.container{
+  box-shadow: 1px 1px 3px 1px rgb(0, 0, 0, .70);
+  margin: 0 auto;
+  width: 700px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+a.activeStyle{
+  padding-bottom: 0;
+  border-bottom: 1px solid #244580;
+  color: rgba(28,108,89, .8)
+}
+
+.menu{
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.cardHeading{
+  font-size: 1.7rem;
+  padding: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.underline {
+  border-bottom-width: 2px;
+ }
+
+.item{
+  display: inline-block;
+  box-shadow: 1px 1px 3px 1px rgba(28,108,89, .8);
+  border-radius: 7px;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.item p{
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+
+.description{
+  display: inline-flex;
+  float: left;
+}
+
+.value{
+  display: inline-flex;
+  float: right;
+}
+
+label{
+  font-size: 1rem;
+  display: block;
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+form{
+  display: inline-block;
+}
+
+.formComponent{ 
+  padding: 10px;
+  padding-top: 0;
+}
+
+input{
+  width: 400px;
+  height: 30px;
+  border-radius: 7px;
+  border: none;
+  box-shadow: 1px 1px 2px 1px rgba(28,108,89, .8);
+}
+
+button{
+  background-color:rgba(28,108,89, .5);
+  width: 100px;
+  border-radius: 7px;
+  margin-top: 10px;
+  margin-bottom: 15px; 
+}
+
+hr{
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.addHeading{
+  margin-bottom: 0;
+}
