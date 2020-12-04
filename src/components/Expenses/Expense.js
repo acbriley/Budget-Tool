@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
 
-function Expense() {
+function Expense(props) {
   return (
-    <div>
-      <h1 className="cardHeading">Expenses</h1>
+    <div className="itemGroup">
+      <div className="itemExpense">
+        <p className="description"> {props.item.expenseDescription} </p>
+        <p className="value"> {props.item.expenseAmount}</p>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Expense
+export default Expense;

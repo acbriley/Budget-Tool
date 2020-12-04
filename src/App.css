@@ -3,12 +3,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-  background: url('path1.png');
+body {
+  background: url("path1.png");
 }
 
-.container{
-  box-shadow: 1px 1px 3px 1px rgb(0, 0, 0, .70);
+.container {
+  box-shadow: 1px 1px 3px 1px rgb(0, 0, 0, 0.7);
   margin: 0 auto;
   width: 700px;
   background-color: #fff;
@@ -21,18 +21,18 @@ a {
   padding: 1rem;
 }
 
-a.activeStyle{
+a.activeStyle {
   padding-bottom: 0;
   border-bottom: 1px solid #244580;
-  color: rgba(28,108,89, .8)
+  color: #244580;
 }
 
-.menu{
+.menu {
   padding: 1rem;
   font-size: 1.5rem;
 }
 
-.cardHeading{
+.cardHeading {
   font-size: 1.7rem;
   padding: 1rem;
   padding-bottom: 0;
@@ -41,70 +41,139 @@ a.activeStyle{
 
 .underline {
   border-bottom-width: 2px;
- }
+}
 
-.item{
+.item {
   display: inline-block;
-  box-shadow: 1px 1px 3px 1px rgba(28,108,89, .8);
+  box-shadow: 1px 1px 3px 1px rgba(28, 108, 89, 0.8);
   border-radius: 7px;
   width: 500px;
   margin-bottom: 20px;
 }
 
-.item p{
+.item p {
   display: inline-flex;
   justify-content: space-between;
   padding: 0 10px;
 }
 
-
-.description{
+.description {
   display: inline-flex;
   float: left;
 }
 
-.value{
+.value {
   display: inline-flex;
   float: right;
 }
 
-label{
+label {
   font-size: 1rem;
   display: block;
   text-align: left;
   padding-bottom: 5px;
 }
 
-form{
+form {
   display: inline-block;
 }
 
-.formComponent{ 
+.formComponent {
   padding: 10px;
   padding-top: 0;
 }
 
-input{
+.incomeInput {
   width: 400px;
   height: 30px;
   border-radius: 7px;
   border: none;
-  box-shadow: 1px 1px 2px 1px rgba(28,108,89, .8);
+  box-shadow: 1px 1px 2px 1px rgba(28, 108, 89, 0.8);
 }
 
-button{
-  background-color:rgba(28,108,89, .5);
-  width: 100px;
-  border-radius: 7px;
-  margin-top: 10px;
-  margin-bottom: 15px; 
+.btn {
+  background: #1c6c59;
+  background-image: -webkit-linear-gradient(top, #1c6c59, #8bb5ab);
+  background-image: -moz-linear-gradient(top, #1c6c59, #8bb5ab);
+  background-image: -ms-linear-gradient(top, #1c6c59, #8bb5ab);
+  background-image: -o-linear-gradient(top, #1c6c59, #8bb5ab);
+  background-image: linear-gradient(to bottom, #1c6c59, #8bb5ab);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-bottom: 20px;
 }
 
-hr{
+.btn:hover {
+  background: #0d362d;
+  background-image: -webkit-linear-gradient(top, #0d362d, #62817a);
+  background-image: -moz-linear-gradient(top, #0d362d, #62817a);
+  background-image: -ms-linear-gradient(top, #0d362d, #62817a);
+  background-image: -o-linear-gradient(top, #0d362d, #62817a);
+  background-image: linear-gradient(to bottom, #0d362d, #62817a);
+  text-decoration: none;
+}
+
+hr {
   width: 400px;
   margin-bottom: 20px;
 }
 
-.addHeading{
+.addHeading {
   margin-bottom: 0;
+}
+
+/* Expense Styling */
+.expenseInput {
+  width: 400px;
+  height: 30px;
+  border-radius: 7px;
+  border: none;
+  box-shadow: 1px 1px 2px 1px rgba(199, 36, 36, 0.8);
+}
+
+.btnExpense {
+  background: #bd0f0f;
+  background-image: -webkit-linear-gradient(top, #bd0f0f, #eb6a6a);
+  background-image: -moz-linear-gradient(top, #bd0f0f, #eb6a6a);
+  background-image: -ms-linear-gradient(top, #bd0f0f, #eb6a6a);
+  background-image: -o-linear-gradient(top, #bd0f0f, #eb6a6a);
+  background-image: linear-gradient(to bottom, #bd0f0f, #eb6a6a);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btnExpense:hover {
+  background: #b30000;
+  background-image: -webkit-linear-gradient(top, #b30000, #e00000);
+  background-image: -moz-linear-gradient(top, #b30000, #e00000);
+  background-image: -ms-linear-gradient(top, #b30000, #e00000);
+  background-image: -o-linear-gradient(top, #b30000, #e00000);
+  background-image: linear-gradient(to bottom, #b30000, #e00000);
+  text-decoration: none;
+}
+
+.itemExpense {
+  display: inline-block;
+  box-shadow: 1px 1px 3px 1px rgba(153, 37, 37, 0.8);
+  border-radius: 7px;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.itemExpense p {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0 10px;
 }

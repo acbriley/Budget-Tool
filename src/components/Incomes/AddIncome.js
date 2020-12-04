@@ -1,23 +1,19 @@
-import React, { useContext, useState } from 'react'
-import {GlobalContext} from '../../context/GlobalState';
+import React, { useState } from "react";
+import { v4 as uuid } from "uuid";
 
-function AddIncome() {
-  const [description, setDescription] = useState('');
+function AddIncome(props) {
+  const [description, setDescription] = useState("");
   const [amount, setAmount] = useState(0);
-  const { addIncome }  = useContext(GlobalContext);
 
-
-
-  function onSubmit (event) {
-
+  function onSubmit(event) {
     event.preventDefault();
 
-    const newIncome= {
-      id: 4,
-      description,
-      amount
-    }
-    addIncome(newIncome)
+    const newIncome = {
+      id: uuid(),
+      incomeDescription: description,
+      incomeAmount: amount,
+    };
+    props.addIncome(newIncome);
   }
 
   return (
@@ -27,20 +23,30 @@ function AddIncome() {
       <form onSubmit={onSubmit}>
         <div className="formComponent">
           <label>Income Description</label>
-          <input value={description} onChange={(event) => setDescription(event.target.value)}
-            type='text' placeholder="Add Description"
+          <input
+            className="incomeInput"
+            value={description}
+            onChange={(event) => setDescription(event.target.value)}
+            type="text"
+            placeholder="Add Description"
           />
         </div>
         <div className="formComponent">
-          <label >Income Amount</label> 
-          <input value={amount} onChange={(event) => setAmount(event.target.value)}
-            type="number" placeholder="Add Income Amount"
+          <label>Income Amount</label>
+          <input
+            className="incomeInput"
+            value={amount}
+            onChange={(event) => setAmount(event.target.value)}
+            type="number"
+            placeholder="Add Income Amount"
           />
         </div>
-        <button type="submit" className="btn">Add Income</button>
+        <button type="submit" className="btn">
+          Add Income
+        </button>
       </form>
     </div>
-  )
+  );
 }
 
 export default AddIncome;

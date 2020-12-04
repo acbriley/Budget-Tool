@@ -1,21 +1,16 @@
-import { useContext } from 'react';
-import Income from './Income';
-import AddIncome from './AddIncome';
-import { GlobalContext } from '../../context/GlobalState';
+import Income from "./Income";
 
-
-function IncomeList() {
-  const {income} = useContext(GlobalContext);
-  
+function IncomeList(props) {
+  console.log(props);
   return (
     <div>
       <h1 className="cardHeading">Total Income</h1>
       <hr />
-      {income.map(item => (<Income item={item} />) )}
-      <AddIncome />
+      {props.totalIncome.map((item) => (
+        <Income item={item} />
+      ))}
     </div>
-  )
+  );
 }
-
 
 export default IncomeList;
