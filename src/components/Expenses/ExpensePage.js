@@ -20,6 +20,8 @@ function ExpensePage() {
 
   return (
     <div>
+      <h1 className="cardHeading">Total Expenses</h1>
+      <hr />
       <ExpenseList totalExpenses={totalExpenses} />
       <AddExpense addExpense={addExpense} />
     </div>

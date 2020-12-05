@@ -27,6 +27,8 @@ function IncomePage() {
 
   return (
     <div>
+      <h1 className="cardHeading">Total Income</h1>
+      <hr />
       <IncomeList totalIncome={totalIncome} />
       <AddIncome addIncome={addIncome} />
     </div>

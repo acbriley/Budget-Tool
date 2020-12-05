@@ -20,13 +20,6 @@ a {
   text-decoration: none;
   padding: 1rem;
 }
-
-a.activeStyle {
-  padding-bottom: 0;
-  border-bottom: 1px solid #244580;
-  color: #244580;
-}
-
 .menu {
   padding: 1rem;
   font-size: 1.5rem;
@@ -41,20 +34,6 @@ a.activeStyle {
 
 .underline {
   border-bottom-width: 2px;
-}
-
-.item {
-  display: inline-block;
-  box-shadow: 1px 1px 3px 1px rgba(28, 108, 89, 0.8);
-  border-radius: 7px;
-  width: 500px;
-  margin-bottom: 20px;
-}
-
-.item p {
-  display: inline-flex;
-  justify-content: space-between;
-  padding: 0 10px;
 }
 
 .description {
@@ -81,6 +60,28 @@ form {
 .formComponent {
   padding: 10px;
   padding-top: 0;
+}
+
+/* INCOME STYLE */
+
+a.activeStyleIncome {
+  padding-bottom: 0;
+  border-bottom: 1px solid #1c6c59;
+  color: #1c6c59;
+}
+
+.item {
+  display: inline-block;
+  box-shadow: 1px 1px 3px 1px rgba(28, 108, 89, 0.8);
+  border-radius: 7px;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.item p {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0 10px;
 }
 
 .incomeInput {
@@ -176,4 +177,17 @@ hr {
   display: inline-flex;
   justify-content: space-between;
   padding: 0 10px;
+}
+
+a.activeStyleExpense {
+  padding-bottom: 0;
+  border-bottom: 1px solid #bd0f0f;
+  color: #bd0f0f;
+}
+
+/* BUDGET STYLING */
+a.activeStyleBudget {
+  padding-bottom: 0;
+  border-bottom: 1px solid #244580;
+  color: #244580;
 }

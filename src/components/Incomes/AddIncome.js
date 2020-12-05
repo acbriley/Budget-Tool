@@ -14,6 +14,8 @@ function AddIncome(props) {
       incomeAmount: amount,
     };
     props.addIncome(newIncome);
+    setDescription("");
+    setAmount(0);
   }
 
   return (

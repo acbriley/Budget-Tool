@@ -14,6 +14,8 @@ function AddExpense(props) {
       expenseAmount: amount,
     };
     props.addExpense(newExpense);
+    setDescription("");
+    setAmount(0);
   }
 
   return (
