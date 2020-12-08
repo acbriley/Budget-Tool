@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Budget() {
   return (
     <div>
       <h1 className="cardHeading">Budget</h1>
     </div>
-  )
+  );
 }
 
-export default Budget
+export default Budget;

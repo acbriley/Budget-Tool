@@ -62,6 +62,19 @@ form {
   padding-top: 0;
 }
 
+.deleteBtn {
+  border: none;
+  background: none;
+  float: right;
+  margin-right: auto;
+  font-size: 2rem;
+}
+
+.deleteBtn:hover {
+  color: rgb(179, 0, 0);
+  cursor: pointer;
+}
+
 /* INCOME STYLE */
 
 a.activeStyleIncome {

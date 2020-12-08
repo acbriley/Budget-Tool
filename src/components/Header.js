@@ -5,7 +5,7 @@ function Header() {
   return (
     <div>
       <header style={headerStyle}>
-        <Link exact to="/">
+        <Link to="/">
           <h1>Budget Tool</h1>
         </Link>
       </header>
